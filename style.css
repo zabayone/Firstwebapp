@@ -133,6 +133,16 @@ p2 {
     text-align: center;
 }
 
+.music a {
+    color: #ff66b2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.music a:hover {
+    color: #ff33cc;
+}
+
 .row {
     display: flex;
     justify-content: center;
