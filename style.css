@@ -107,6 +107,8 @@ p {
 }
 
 .bio-image img {
+    max-width: 15%;
+    max-height: 15%;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
