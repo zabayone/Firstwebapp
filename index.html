@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio magico mondo fatato</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeLanguage(language) {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(el => {
+                const lang = el.getAttribute('data-lang');
+                if (lang === language) {
+                    el.style.display = 'block';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+
+<body onload="changeLanguage('it')">
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button onclick="changeLanguage('it')">Italiano</button>
+        <button onclick="changeLanguage('en')">English</button>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 data-lang="it">Benvenuti nel Magico Mondo di Hello Kitty!</h1>
+        <h1 data-lang="en" style="display:none;">Welcome to the Magical World of Hello Kitty!</h1>
+        <p data-lang="it">Un tributo a un'icona di dolcezza e amicizia</p>
+        <p data-lang="en" style="display:none;">A tribute to an icon of sweetness and friendship</p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#about" data-lang="it">Biografia</a>
+        <a href="#about" data-lang="en" style="display:none;">Biography</a>
+        <a href="#gallery" data-lang="it">Galleria</a>
+        <a href="#gallery" data-lang="en" style="display:none;">Gallery</a>
+        <a href="#contact" data-lang="it">Contatti</a>
+        <a href="#contact" data-lang="en" style="display:none;">Contact</a>
+    </div>
+
+    <!-- Biografia Section -->
+    <div id="about" class="section about">
+        <h2 data-lang="it">Chi è Hello Kitty?</h2>
+        <h2 data-lang="en" style="display:none;">Who is Hello Kitty?</h2>
+        <p data-lang="it">Hello Kitty è molto più di un semplice personaggio, è un'icona culturale che ha affascinato generazioni con la sua semplicità e dolcezza...</p>
+        <p data-lang="en" style="display:none;">Hello Kitty is much more than just a character, she is a cultural icon that has fascinated generations with her simplicity and sweetness...</p>
+        <div class="bio-image">
+            <img src="Hello_Kitty.webp" alt="Hello Kitty Image" height="400px" width="400px">
+        </div>
+    </div>
+
+    <!-- Galleria Section -->
+    <div id="gallery" class="section gallery">
+        <h2 data-lang="it">Galleria Hello Kitty</h2>
+        <h2 data-lang="en" style="display:none;">Hello Kitty Gallery</h2>
+        <div class="row">
+            <div class="column">
+                <img src="_662d8c8c-62d2-4a3f-af93-9a4531893f21.jpg" alt="Hello Kitty Opera 1" height="300px" width="300px">
+                <p data-lang="it">Titolo: "Hello Kitty nel Mondo"</p>
+                <p data-lang="en" style="display:none;">Title: "Hello Kitty Around the World"</p>
+            </div>
+            <div class="column">
+                <img src="_d01a8bbb-e62f-478e-a749-fff2f7f91f76.jpg" alt="Hello Kitty Opera 2" height="300px" width="300px">
+                <p data-lang="it">Titolo: "Fioritura Rosa"</p>
+                <p data-lang="en" style="display:none;">Title: "Pink Bloom"</p>
+            </div>
+            <div class="column">
+                <img src="_d448f20e-859c-42c7-8bd3-802a7f2219a1.jpg" alt="Hello Kitty Opera 3" height="300px" width="300px">
+                <p data-lang="it">Titolo: "Dolcezza Arcobaleno"</p>
+                <p data-lang="en" style="display:none;">Title: "Rainbow Sweetness"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Section -->
+    <div id="music" class="section music">
+        <h2 data-lang="it">Musica ispirata ad Hello Kitty</h2>
+        <h2 data-lang="en" style="display:none;">Music inspired by Hello Kitty</h2>
+        <div class="row">
+            <div class="column">
+                <audio controls autoplay>
+                    <source src="hello_kitty.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contatti Section -->
+    <div id="contact" class="section contact">
+        <h2 data-lang="it">Contatti</h2>
+        <h2 data-lang="en" style="display:none;">Contact</h2>
+        <p data-lang="it">Per collaborazioni, eventi e tutto ciò che riguarda Hello Kitty, contattami via email o sui social media:</p>
+        <p data-lang="en" style="display:none;">For collaborations, events, and all things Hello Kitty, contact me via email or on social media:</p>
+        <p>mail: <a href="mailto:hellokitty@gmail.com">hellokitty@gmail.com</a></p>
+        <p data-lang="it">Seguimi su Instagram: <a href="https://instagram.com/hellokitty">@hellokitty</a></p>
+        <p data-lang="en" style="display:none;">Follow me on Instagram: <a href="https://instagram.com/hellokitty">@hellokitty</a></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Hello Kitty Fan Club - Tutti i diritti riservati</p>
+    </div>
+
+</body>
+
+</html>
